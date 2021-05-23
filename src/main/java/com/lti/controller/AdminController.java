@@ -6,7 +6,6 @@ import java.util.Set;
 
 import javax.mail.MessagingException;
 
-import org.hibernate.internal.build.AllowSysOut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,16 +17,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.lti.model.Admin;
-import com.lti.model.Cart;
 import com.lti.model.Compare;
 import com.lti.model.Order;
 import com.lti.model.OrderDetail;
-import com.lti.model.Payment;
 import com.lti.model.Product;
 import com.lti.model.ProductForApproval;
 import com.lti.model.Retailer;
 import com.lti.model.User;
-import com.lti.model.WishList;
 import com.lti.service.AdminService;
 import com.lti.service.CartService;
 import com.lti.service.OrderService;
@@ -44,7 +40,6 @@ import com.lti.dto.ProductDTO;
 import com.lti.dto.ProductForApprovalDTO;
 import com.lti.dto.RetailerSignUp;
 import com.lti.dto.UserSignUp;
-import com.lti.dto.WishListDTO;
 
 @RestController
 @RequestMapping(path = "admin")
